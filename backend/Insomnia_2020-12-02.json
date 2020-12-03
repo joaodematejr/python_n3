@@ -1,0 +1,210 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-12-03T01:01:59.373Z",
+    "__export_source": "insomnia.desktop.app:v2020.5.0",
+    "resources": [
+        {
+            "_id": "req_12548b472f174c6a9e0c3b10d82c9cf1",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606955912926,
+            "created": 1606952324293,
+            "url": "http://127.0.0.1:5000/userQuery",
+            "name": "Listar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"João 2\",\n\t\"cpf\": \"123.334.454-57\",\n\t\"email\": \"joaodematejr2@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_a5bc9e2ac9ee4a0b86aff7f671826b10"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1606952324293,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "parentId": null,
+            "modified": 1606952318915,
+            "created": 1606952318915,
+            "name": "People",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_91cef8feec624be3abad57a5702c59a3",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606956413874,
+            "created": 1606956089597,
+            "url": "http://127.0.0.1:5000/userQueryAll",
+            "name": "Listar Todos",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_a5bc9e2ac9ee4a0b86aff7f671826b10"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1606846730078.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6c66ffcb666149c2a2dde795abbf799e",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606955809519,
+            "created": 1606952423436,
+            "url": "http://127.0.0.1:5000/userCreate",
+            "name": "Criar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"João 2\",\n\t\"cpf\": \"123.334.454-57\",\n\t\"email\": \"joaodematejr2@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5b38863beeb448898c3228c596c13962"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1606741135864,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a7450772e3954bd281844e3dc13fe7c7",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606956980533,
+            "created": 1606952428061,
+            "url": "http://127.0.0.1:5000/userRemove/12",
+            "name": "Deletar",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"cpf\": \"123.334.454-33\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_33cb89fdfa164d04bba82b4b933f7fe1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1606635541649.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_90b6816f41a0432cae555293aa852c5e",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606955877841,
+            "created": 1606952433780,
+            "url": "http://127.0.0.1:5000/userEdit",
+            "name": "Editar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"João 2\",\n\t\"cpf\": \"123.334.454-57\",\n\t\"email\": \"joaodematejr2@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_877dea4634e64dba9a0132f8cffa94a9"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1606582744542.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_4e881a0441bbb893220ed7000c3599da98293843",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606952318967,
+            "created": 1606952318967,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1606952318967,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_4e881a0441bbb893220ed7000c3599da98293843",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606952318969,
+            "created": 1606952318969,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_745c58c1c84a49c0a9d1a5100da5e750",
+            "parentId": "wrk_1de252a10d8d4fbe97fb6e09968d7a85",
+            "modified": 1606952318922,
+            "created": 1606952318922,
+            "fileName": "People",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
