@@ -43,3 +43,8 @@ class ControllerUser:
     def query(self, req):
         user = req.get_json()
         return database.query(user)
+
+
+    def queryAll(self, req):
+        user = req.get_json()
+        return database.queryAll(user)

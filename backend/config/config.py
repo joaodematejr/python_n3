@@ -5,7 +5,7 @@ from bson import ObjectId
 
 import pymongo
 
-URL = ""
+URL = "mongodb+srv://root:SvDsx6qmTnvEHgq3@cluster0.aa4ya.mongodb.net/people?retryWrites=true&w=majority"
 
 client = pymongo.MongoClient(URL)
 db = client["api"]
@@ -49,5 +49,11 @@ class ConfigDB:
     def query(self, user):
         newListUser = []
         for user in col.find({"$and": [{"delete": False}, {"status": True}, {"name": user['name']}, {"cpf": user['cpf']}, {"email": user['email']}]}):
+            newListUser.append(user)
+        return JSONEncoder().encode(newListUser), 200
+    
+    def queryAll(self, user):
+        newListUser = []
+        for user in col.find():
             newListUser.append(user)
         return JSONEncoder().encode(newListUser), 200

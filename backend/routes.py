@@ -17,3 +17,7 @@ class Routes:
     def query(self, req):
         response = userController.query(req)
         return response
+
+    def query_user_all(self, req):
+        response = userController.queryAll(req)
+        return response
